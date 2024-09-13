@@ -1,0 +1,39 @@
+---
+import BaseHead from "@/components/BaseHead.astro";
+import Header from '@/components/Header.astro';
+import Hero from '@/components/Hero.astro';
+import Nosotros from '@/components/Nosotros.astro';
+import Testimonios from '@/components/Testimonios.astro';
+import Preguntas from '@/components/Preguntas.astro';
+import Contacto from '@/components/Contacto.astro';
+import Footer from '@/components/Footer.astro';
+
+import '../styles/base.css';
+import '../styles/fonts.css';
+---
+
+<!doctype html>
+<html lang="es">
+	<BaseHead title="Ingres- ar" description="¡Bienvenido al portal educativo y de admisiones universitarias! Aquí encontrarás todo lo que necesitas para ingresar a la universidad y recibir apoyo escolar de calidad. Nuestro sitio web está diseñado para ayudarte en cada paso de tu camino hacia el éxito académico."/>
+	<body>
+		<Header />
+
+		<Hero />
+
+		<Nosotros />
+
+		<Testimonios />
+
+		<Preguntas />
+
+		<Contacto />
+		
+		<Footer />
+		<slot />
+	</body>
+</html>
+<style is:global>
+	body {
+		background-color: #E9E9E9;
+	}
+</style>
