@@ -1,6 +1,6 @@
 ---
 const { title, description, image } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+//const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Agrega tu ID de Google Analytics aquí
 const GA_TRACKING_ID = import.meta.env.GA_TRACKING_ID;
@@ -15,7 +15,7 @@ const GA_TRACKING_ID = import.meta.env.GA_TRACKING_ID;
 	<title>{title}</title>
 	<meta name="title" content={title} />
 	<meta name="description" content={description} />
-	<link rel="canonical" href={canonicalURL} />
+	<!--<link rel="canonical" href={canonicalURL} />-->
 
 	<!-- Global Metadata -->
 	<link rel="icon" href="/favicon.png" />
@@ -34,7 +34,7 @@ const GA_TRACKING_ID = import.meta.env.GA_TRACKING_ID;
 	<!-- Open Graph / Facebook -->
 	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={canonicalURL} />
+	<!--<meta property="og:url" content={canonicalURL} />-->
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
 	<meta property="og:image" content="/images/ogmeta.webp" />
